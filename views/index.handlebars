@@ -94,29 +94,26 @@
   </div>
 </div>
 
+
+{{!-- 排序 button group --}}
 <div class="button-group">
   <div class="button-container">
     <div>排序：</div>
     <form action="/" method="get">
-      <button type="submit" class="btn btn-primary" name="sorted" value="AtoZ">名稱 A -> Z</button>
+      <button type="submit" class="btn btn-primary" name="name" value="asc">名稱 A -> Z</button>
     </form>
     <form action="/" method="get">
-      <button type="submit" class="btn btn-secondary" name="sorted" value="ZtoA">名稱 Z -> A</button>
+      <button type="submit" class="btn btn-secondary" name="name" value="desc">名稱 Z -> A</button>
     </form>
     <form action="/" method="get">
-      <button type="submit" class="btn btn-success" name="sorted" value="category">類別</button>
+      <button type="submit" class="btn btn-success" name="category" value="asc">類別</button>
     </form>
     <form action="/" method="get">
-      <button type="submit" class="btn btn-danger" name="sorted" value="ratingHtoL">評分 高 -> 低</button>
+      <button type="submit" class="btn btn-danger" name="rating" value="desc">評分 高 -> 低</button>
     </form>
     <form action="/" method="get">
-      <button type="submit" class="btn btn-warning" name="sorted" value="ratingLtoH">評分 低 -> 高</button>
+      <button type="submit" class="btn btn-warning" name="rating" value="asc">評分 低 -> 高</button>
     </form>
-    {{!-- <button type="button" class="btn btn-primary">名稱 A -> Z</button>
-    <button type="button" class="btn btn-secondary">名稱 Z -> A</button>
-    <button type="button" class="btn btn-success">類別</button>
-    <button type="button" class="btn btn-danger">評分 高 -> 低</button>
-    <button type="button" class="btn btn-warning">評分 低 -> 高</button> --}}
   </div>
 </div>
 

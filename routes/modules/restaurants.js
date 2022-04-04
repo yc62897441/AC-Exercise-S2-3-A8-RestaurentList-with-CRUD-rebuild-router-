@@ -33,7 +33,6 @@ router.get("/:id", (req, res) => {
 // 新增單筆餐廳資料
 router.post("/create", (req, res) => {
   const reqBody = req.body
-  console.log(reqBody)
 
   const restaurant = new Restaurant({
     name: reqBody.name,
@@ -55,7 +54,6 @@ router.post("/create", (req, res) => {
 router.put("/update/:id", (req, res) => {
   const id = req.params.id
   const updateInfo = req.body
-  console.log(updateInfo)
   Restaurant.findById(id)
     .then(restaurant => {
       restaurant.name = updateInfo.name
